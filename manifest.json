@@ -1,0 +1,21 @@
+{
+	"name": "plugin_template_rust",
+	"description": "plugin template for puppet, with rust",
+	"author": "_",
+	"source": "_",
+	"platforms": [
+		"windows",
+		"linux",
+		"macos"
+	],
+	"allowedPaths": [],
+	"allowedHosts": [],
+	"wasi": false,
+	"pluginArgs": [
+		{
+			"name": "item text",
+			"description": "change text on the item",
+			"defaultValue": "item from rust template"
+		}
+	]
+}
