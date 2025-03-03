@@ -1,6 +1,14 @@
 use extism_pdk::*;
 use serde::Serialize;
 
+// use this function to run any command from host OS
+// to run an executable from plugins data folder just run it with /data/<executable_name>
+// returns commands stdout
+#[host_fn]
+extern "ExtismHost" {
+    fn cli_run(command: String, args: Json<Vec<String>>) -> String;
+}
+
 #[derive(Serialize)]
 struct PluginCommand {
     name: String,
