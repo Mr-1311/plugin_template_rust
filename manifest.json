@@ -11,6 +11,7 @@
 	"allowedPaths": [],
 	"allowedHosts": [],
 	"wasi": false,
+	"cli": false,
 	"pluginArgs": [
 		{
 			"name": "item text",
